@@ -7,15 +7,21 @@
     <title>Vite App</title>
 </head>
 <body>
+<header id="header" class="bg-gray-200 pt-4 px-3">
+    <!-- main container  -->
+    <div class="conatiner max-w-6xl mx-auto bg-slate-300 py-6 rounded-xl shadow-lg">
+        <h1 class="text-2xl md:text-5xl uppercase font-black text-center text-slate-700">Testimonial project: tailwind</h1>
+    </div>
+</header>
     <!-- testimonial grid  -->
-<section id="testimonials" class="bg-gray-200 min-h-screen">
-    <div class="container max-w-6xl mx-auto p-2 md:p-10">
+<section id="testimonials" class="bg-gray-200 py-10">
+    <div class="container max-w-6xl mx-auto p-2 lg:p-10">
         <!-- grid container  -->
-        <div class="text-white grid gap-6 grid-cols-1 md:grid-cols-4">
+        <div class="text-white grid gap-6 grid-cols-1 lg:grid-cols-4 lg:grid-rows-2">
             <!-- box-1 starts  -->
-            <div class="relative p-10 rounded-xl bg-purple-700">
+            <div class="relative p-10 rounded-xl bg-purple-700 lg:col-span-2">
                 <!-- images quote -->
-                <img src="./src/images/bg-pattern-quotation.svg" alt="quote" class="absolute top-3 right-10 scale-125 md:top-20 md:right-24 md:scale-150">
+                <img src="./src/images/bg-pattern-quotation.svg" alt="quote" class="absolute top-3 right-10 scale-125 lg:top-20 lg:right-24 lg:scale-150">
                 <!-- user name & photo -->
                 <div class="flex z-10 space-x-4">
                     <img src="./src/images/image-daniel.jpg" alt="user-one" class="w-10 h-10 rounded-full ring-2 ring-purple-300 ">
@@ -31,7 +37,7 @@
                     got every penny's worth.
                 </p>
                 <!-- small text  -->
-                <p class="opacity-50 mt-6 text-sm line-clamp-6">
+                <p class="opacity-50 mt-6 text-sm line-clamp-none">
                     "I was an EMT for many years before I joined the bootcamp. I've been
                     looking to make a transition and have heard some people who had an
                     amazing experience here. I signed up for the free intro course and
@@ -44,8 +50,8 @@
             <!-- box-2 -->
             <div class="p-10 rounded-xl bg-gray-600">
                 <!-- user name & photo -->
-                <div class="flex space-x-4 md:space-x-6">
-                    <img src="./src/images/image-jonathan.jpg" alt="user-one" class="w-10 md:w-7 h-10 md:h-7 rounded-full ring-2 ring-purple-300 md:top-20 md:right-24 md:scale-150">
+                <div class="flex space-x-4 lg:space-x-6">
+                    <img src="./src/images/image-jonathan.jpg" alt="user-one" class="w-10 lg:w-7 h-10 lg:h-7 rounded-full ring-2 ring-purple-300 lg:top-20 lg:right-24 lg:scale-150">
                     <div class="text-sm">
                         <h4 class="opacity-90 capitalize">Jonathan Walters</h4>
                         <p class="opacity-50 capitalize">Verified Graduate</p>
@@ -63,10 +69,10 @@
                 </p>
             </div>
             <!-- box-3 -->
-            <div class=" hidden p-10 rounded-xl bg-white text-gray-600 md:block">
+            <div class=" hidden p-10 rounded-xl bg-white text-gray-600 lg:block row-span-2">
                 <!-- user name & photo -->
-                <div class="flex space-x-4 md:space-x-6">
-                    <img src="./src/images/image-kira.jpg" alt="user-one" class="w-10 md:w-7 h-10 md:h-7 rounded-full ring-2 ring-purple-300 md:top-20 md:right-24 md:scale-150">
+                <div class="flex space-x-4 lg:space-x-6">
+                    <img src="./src/images/image-kira.jpg" alt="user-one" class="w-10 lg:w-7 h-10 lg:h-7 rounded-full ring-2 ring-purple-300 lg:top-20 lg:right-24 lg:scale-150">
                     <div class="text-sm">
                         <h4 class="opacity-90 capitalize">Kira Whittle</h4>
                         <p class="opacity-50 capitalize">Verified Graduate</p>
@@ -77,7 +83,7 @@
                     Such a life-changing experience. Highly recommended!
                 </p>
                 <!-- small text  -->
-                <p class="opacity-50 mt-6 text-sm line-clamp-6">
+                <p class="opacity-50 mt-6 text-sm lg:line-clamp-none">
                     "Before joining the bootcamp, I've never written a line of code. I
                     needed some structure from professionals who can help me learn
                     programming step by step. I was encouraged to enroll by a former
@@ -95,8 +101,8 @@
             <!-- box-4 -->
             <div class="p-10 rounded-xl bg-gray-600">
                 <!-- user name & photo -->
-                <div class="flex space-x-4 md:space-x-6">
-                    <img src="./src/images/image-jeanette.jpg" alt="user-one" class="w-10 md:w-7 h-10 md:h-7 rounded-full ring-2 ring-purple-300 md:top-20 md:right-24 md:scale-150">
+                <div class="flex space-x-4 lg:space-x-6">
+                    <img src="./src/images/image-jeanette.jpg" alt="user-one" class="w-10 lg:w-7 h-10 lg:h-7 rounded-full ring-2 ring-purple-300 lg:top-20 lg:right-24 lg:scale-150">
                     <div class="text-sm">
                         <h4 class="opacity-90 capitalize">Jeanette Harmon</h4>
                         <p class="opacity-50 capitalize">Verified Graduate</p>
@@ -113,10 +119,10 @@
                 </p>
             </div>
             <!-- box-5 -->
-            <div class="p-10 rounded-xl bg-gray-900 text-white">
+            <div class="p-10 rounded-xl bg-gray-900 text-white lg:col-span-2">
                 <!-- user name & photo -->
-                <div class="flex space-x-4 md:space-x-6">
-                    <img src="./src/images/image-patrick.jpg" alt="user-one" class="w-10 md:w-7 h-10 md:h-7 rounded-full ring-2 ring-purple-300 md:top-20 md:right-24 md:scale-150">
+                <div class="flex space-x-4 lg:space-x-6">
+                    <img src="./src/images/image-patrick.jpg" alt="user-one" class="w-10 lg:w-7 h-10 lg:h-7 rounded-full ring-2 ring-purple-300 lg:top-20 md:right-24 lg:scale-150">
                     <div class="text-sm">
                         <h4 class="opacity-90 capitalize">Patrick Abrams</h4>
                         <p class="opacity-50 capitalize">Verified Graduate</p>
@@ -139,10 +145,10 @@
                 </p>
             </div>
             <!-- box-6 -->
-            <div class="p-10 rounded-xl bg-white text-gray-900 md:hidden">
+            <div class="p-10 rounded-xl bg-white text-gray-900 lg:hidden">
                 <!-- user name & photo -->
-                <div class="flex space-x-4 md:space-x-6">
-                    <img src="./src/images/image-kira.jpg" alt="user-one" class="w-10 md:w-7 h-10 md:h-7 rounded-full ring-2 ring-purple-300 md:top-20 md:right-24 md:scale-150">
+                <div class="flex space-x-4 lg:space-x-6">
+                    <img src="./src/images/image-kira.jpg" alt="user-one" class="w-10 lg:w-7 h-10 lg:h-7 rounded-full ring-2 ring-purple-300 lg:top-20 lg:right-24 lg:scale-150">
                     <div class="text-sm">
                         <h4 class="opacity-90 capitalize">Kira Whittle</h4>
                         <p class="opacity-50 capitalize">Verified Graduate</p>
@@ -153,7 +159,7 @@
                     Such a life-changing experience. Highly recommended!
                 </p>
                 <!-- small text  -->
-                <p class="opacity-50 mt-6 text-sm line-clamp-6">
+                <p class="opacity-50 mt-6 text-sm line-clamp-none">
                     "Before joining the bootcamp, I've never written a line of code. I
                     needed some structure from professionals who can help me learn
                     programming step by step. I was encouraged to enroll by a former
@@ -172,6 +178,9 @@
         </div>
     </div>
 </section>
+<footer class="bg-gray-200 pb-5 px-2">
+    <div id="footer" class="container mx-auto max-w-6xl py-8 bg-slate-300 rounded-xl shadow-xl text-center font-sans capitalize font-semibold text-slate-700 italic"></div>
+</footer>
 <script type="module" src="/main.js"></script>
 </body>
 </html>
